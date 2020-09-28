@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open sans;
+    -webkit-user-select: none;
+    /* Chrome/Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+ */
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 15px;
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-calendar {
+    background: #ffffff;
+    padding: 15px;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.button-container-calendar button {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: #0266ff;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 6px 13px;
+}
+
+.table-calendar {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-calendar td,
+.table-calendar th {
+    padding: 24px;
+    border: 1px solid black;
+}
+
+.date-picker {
+    background-color: #0166fe64;
+    position: relative;
+    cursor: pointer;
+}
+
+.date-picker>span {
+    top: -20px;
+    left: -20px;
+    position: relative;
+}
+
+.date-picker.selected {
+    border: 3px solid red;
+}
+
+.date-picker.selected span {
+    border-bottom: 2px solid currentColor;
+}
+
+#monthAndYear {
+    text-align: center;
+    margin-top: 0;
+}
+
+.button-container-calendar {
+    position: relative;
+    margin-bottom: 1em;
+    overflow: hidden;
+    clear: both;
+}
+
+#previous {
+    float: left;
+}
+
+#next {
+    float: right;
+}
+
+.footer-container-calendar {
+    margin-top: 1em;
+    border-top: 1px solid #dadada;
+    padding: 10px 0;
+}
+
+.footer-container-calendar select {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: #ffffff;
+    color: #585858;
+    border: 1px solid #bfc5c5;
+    border-radius: 3px;
+    padding: 5px 1em;
+}
+
+.modal-holder {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+}
+
+.modal-container {
+    width: 30%;
+    height: 30%;
+    background: #eee;
+    opacity: 1;
+    margin: auto;
+    display: flex;
+}
+
+.modal-container>ul {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-container li {
+    flex-grow: 1;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.modal-container li:hover {
+    background-color: white;
+}

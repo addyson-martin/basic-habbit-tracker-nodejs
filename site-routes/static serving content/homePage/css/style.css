@@ -1,0 +1,70 @@
+.user-avatar {
+    max-width: 50px;
+    border-radius: 100%;
+    margin: 0px 30px;
+}
+
+.book-button {
+    float: right;
+    vertical-align: 50%;
+}
+
+.card-section {
+    padding: 30px 30px 30px 30px;
+}
+
+.add-hobby {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.add-hobby>button {
+    padding: 9px;
+    background-color: gray;
+    border-style: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.modal-holder {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+}
+
+.modal-container {
+    width: 30%;
+    background: #eee;
+    opacity: 1;
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+}
+
+#add-form {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#add-form>button {
+    text-align: center;
+    position: relative;
+    border-style: none;
+}
+
+#add-form input,
+button {
+    padding: 10px;
+    margin: 10px;
+}
